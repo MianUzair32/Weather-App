@@ -3,30 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="asset/images/weather-icon.jpg" alt="Bootstrap" width="55" height="55" class="ms-5 me-2 rounded-circle">
+            Weather Application</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4 ">
+              <li class="nav-item pe-5">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link " href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar-end -->
     <div class="container">
-    <div class="card  rounded w-50 m-auto mt-5 pb-4 mb-3 text-center h-25" id="card">
-        <input type="text" id="searchBox" class="w-50 text-center m-auto mt-4 rounded border-white" placeholder="Enter your City & Country">
-        <!-- <img src="sun3.jpg" alt="" width="125px"  height="125px"> -->
-        <label for="" class="fs-1 fw-bold">City:</label>
-        <h2 id="city" class="fs-2"></h2>
-        <label for="" class="fs-1 fw-bold">Temprature:</label>
-        <h1 id="temp" class="fs-2"></h1>
-        <label for="" class="fs-1 fw-bold">Min / Max Temprature:</label>
-        <span id="min_max_temp" class=" fs-2"></span>
-        <label for="" class="fs-1 fw-bold">Weather:</label>
-        <h4 id="weather" class="fs-2"></h4>
-        <label for="" class="fs-1 fw-bold">Weather Description:</label>
-        <p id="weather_desc" class="fs-2"></p>
-        <label for="" class="fs-1 fw-bold">Wind Direction Speed:</label>
-        <span id="wind_dirc_speed" class=" fs-2"></span>
+      <div class="row">
+        <div class="col-3 mt-5 pt-5">
+          <input type="text" id="searchBox" class=" text-center m-auto mt-4 rounded border-white" placeholder="Enter your City">
+          <button type="submit" onclick="setFunc()" id="btn" class="btn btn-primary mt-4 me-1">Submit</button>
+        </div>
+        <div class="col-9">
+          <div class="card  rounded w-75 m-auto mt-5 pb-4 mb-3 text-center " id="card"> 
+            <!-- <img src="sun3.jpg" alt="" width="125px"  height="125px"> -->
+            <label for="" class="fs-1 fw-bold">City:</label>
+            <h2 id="city" class="fs-2"></h2>
+            <label for="" class="fs-1 fw-bold">Temprature:</label>
+            <h1 id="temp" class="fs-2"></h1>
+            <label for="" class="fs-1 fw-bold">Min / Max Temprature:</label>
+            <span id="min_max_temp" class=" fs-2"></span>
+            <label for="" class="fs-1 fw-bold">Weather:</label>
+            <h4 id="weather" class="fs-2"></h4>
+            <label for="" class="fs-1 fw-bold">Weather Description:</label>
+            <p id="weather_desc" class="fs-2"></p>
+            <label for="" class="fs-1 fw-bold">Wind Direction Speed:</label>
+            <span id="wind_dirc_speed" class=" fs-2"></span>
+        </div>
+        </div>
+      </div>
+   
     </div>
-    </div>
+
+    <div class="container-fluid bg-dark text-white mb-0 py-2">
+        <footer class="mt-3">
+            <p>&copy; 2023 Your Weather App. All rights reserved.</p>
+        </footer>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

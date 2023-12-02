@@ -3,18 +3,34 @@
 body{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(141, 211, 247);
+    background-color: #203354;
+}
+#container {
+    width: 100%;
+    min-height: 600px; /* Adjust the max-width as needed */
+    overflow: hidden;
 }
 .card{
     background-image: url('../images/bg.jpg');
-    /* background-image: url('bgcloud.jpg'); */
+    /* background-image: linear-gradient(to right, #1260cc,skyblue); */
     background-position: center;
     background-size: cover;
     color: black;
+    overflow: hidden;
 }
 #searchBox{
     width: 250px;
     height: 40px;
     text-align: center;
     display: block;
+}
+
+.box{
+    background-image: linear-gradient(to right, #1260cc,skyblue);
+    margin: 8px;
+    height: 280px;
+    width: 200px;
+    padding: 35px 10px;
+    border-radius: 8px;
+    /* padding-top: 10px; */
 }
